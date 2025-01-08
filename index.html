@@ -1,58 +1,22 @@
 <!DOCTYPE html>
-<html lang="fr">
-    <!-- Trigger Deployment -->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dario-01 - Assistant IA pour clauses contractuelles</title>
+    <meta name="description" content="Chatbot Dario-01 - An intelligent assistant to help you with contract clauses.">
+    <title>Dario-01 Chatbot</title>
     <link rel="stylesheet" href="styles.css">
-    <script async type="module" src="https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js"></script>
-    <script defer src="script.js"></script>
 </head>
-<body class="dark-mode">
-    <div id="welcome-modal" class="modal">
-        <div class="modal-content">
-            <h2>Bienvenue sur Dario-01 !</h2>
-            <p>Merci de visiter notre site. Dario-01 est là pour vous aider à rédiger vos clauses contractuelles.</p>
-            <button id="close-modal">Commencer</button>
-        </div>
-    </div>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dario-01</h1>
+            <p>Your intelligent assistant for contract clauses.</p>
+        </header>
 
-    <header>
-        <h1 class="fade-in">Dario-01</h1>
-        <p class="fade-in">L'assistant IA qui vous aide à mieux rédiger vos clauses contractuelles.</p>
-        <nav>
-            <ul>
-                <li><a href="#accueil" class="slide-in">Accueil</a></li>
-                <li><a href="#services" class="slide-in">Nos Services</a></li>
-                <li><a href="#chatbot" class="slide-in">Dario-01 Chatbot</a></li>
-                <li><a href="#contact" class="slide-in">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="accueil">
-            <h2 class="slide-in">Bienvenue sur Dario-01</h2>
-            <p class="fade-in">
-                Dario-01 est une intelligence artificielle conçue pour analyser, rédiger et améliorer vos clauses contractuelles. 
-                Que vous soyez un professionnel ou un particulier, notre assistant est là pour vous guider.
-            </p>
-        </section>
-
-        <section id="services">
-            <h2 class="slide-in">Nos Services</h2>
-            <ul>
-                <li class="fade-in">Analyse et vérification de clauses contractuelles.</li>
-                <li class="fade-in">Suggestions pour rédiger des contrats clairs et juridiquement solides.</li>
-                <li class="fade-in">Conseils personnalisés pour vos besoins contractuels.</li>
-            </ul>
-        </section>
-
-        <section id="chatbot">
-            <h2 class="slide-in">Interagissez avec Dario-01</h2>
-            <p class="fade-in">Posez vos questions directement à Dario-01 via notre chatbot ci-dessous :</p>
-            <div id="chatbot-container" class="fade-in">
+        <main>
+            <section class="chatbot-container">
+                <h2>Talk to Dario-01</h2>
                 <iframe 
                     src="https://interfaces.zapier.com/embed/chatbot/cm5bmlskt001s2rufkly2yzr4" 
                     height="600px" 
@@ -60,31 +24,12 @@
                     allow="clipboard-write *" 
                     style="border: none;">
                 </iframe>
-            </div>
-        </section>
+            </section>
+        </main>
 
-        <section id="contact">
-            <h2 class="slide-in">Contact</h2>
-            <form id="contact-form" class="fade-in">
-                <label for="nom">Nom :</label>
-                <input type="text" id="nom" name="nom" required>
-
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Votre message :</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Envoyer</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Dario-01. Tous droits réservés.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 Dario-01. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
-git add .
-git commit -m "Trigger new deployment"
-git push origin main
