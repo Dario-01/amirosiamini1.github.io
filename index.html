@@ -6,6 +6,7 @@
     <title>Dario-01 - Assistant IA pour clauses contractuelles</title>
     <link rel="stylesheet" href="styles.css">
     <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+    <script defer src="script.js"></script>
 </head>
 <body class="dark-mode">
     <header>
@@ -19,6 +20,8 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <!-- Dark Mode Toggle -->
+        <button id="dark-mode-toggle">Changer de mode</button>
     </header>
 
     <main>
@@ -41,8 +44,8 @@
             <p>Posez vos questions directement à Dario-01 via notre chatbot ci-dessous :</p>
             <div id="chatbot-container">
                 <zapier-interfaces-chatbot-embed 
-                    is-popup='false' 
-                    chatbot-id='cm5bmlskt001s2rufkly2yzr4'
+                    is-popup="false" 
+                    chatbot-id="cm5bmlskt001s2rufkly2yzr4" 
                     style="width: 100%; min-height: 600px;">
                 </zapier-interfaces-chatbot-embed>
             </div>
