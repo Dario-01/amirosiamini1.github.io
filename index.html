@@ -5,55 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dario-01 - Assistant IA pour clauses contractuelles</title>
     <link rel="stylesheet" href="styles.css">
-    <script async type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
+    <script async type="module" src="https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js"></script>
     <script defer src="script.js"></script>
 </head>
 <body class="dark-mode">
+    <div id="welcome-modal" class="modal">
+        <div class="modal-content">
+            <h2>Bienvenue sur Dario-01 !</h2>
+            <p>Merci de visiter notre site. Dario-01 est là pour vous aider à rédiger vos clauses contractuelles.</p>
+            <button id="close-modal">Commencer</button>
+        </div>
+    </div>
+
     <header>
-        <h1>Dario-01</h1>
-        <p>L'assistant IA qui vous aide à mieux rédiger vos clauses contractuelles.</p>
+        <h1 class="fade-in">Dario-01</h1>
+        <p class="fade-in">L'assistant IA qui vous aide à mieux rédiger vos clauses contractuelles.</p>
         <nav>
             <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#services">Nos Services</a></li>
-                <li><a href="#chatbot">Dario-01 Chatbot</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#accueil" class="slide-in">Accueil</a></li>
+                <li><a href="#services" class="slide-in">Nos Services</a></li>
+                <li><a href="#chatbot" class="slide-in">Dario-01 Chatbot</a></li>
+                <li><a href="#contact" class="slide-in">Contact</a></li>
             </ul>
         </nav>
-        <!-- Dark Mode Toggle -->
-        <button id="dark-mode-toggle">Changer de mode</button>
     </header>
 
     <main>
         <section id="accueil">
-            <h2>Bienvenue sur Dario-01</h2>
-            <p>Dario-01 est une intelligence artificielle conçue pour analyser, rédiger et améliorer vos clauses contractuelles. Que vous soyez un professionnel ou un particulier, notre assistant est là pour vous guider.</p>
+            <h2 class="slide-in">Bienvenue sur Dario-01</h2>
+            <p class="fade-in">
+                Dario-01 est une intelligence artificielle conçue pour analyser, rédiger et améliorer vos clauses contractuelles. 
+                Que vous soyez un professionnel ou un particulier, notre assistant est là pour vous guider.
+            </p>
         </section>
 
         <section id="services">
-            <h2>Nos Services</h2>
+            <h2 class="slide-in">Nos Services</h2>
             <ul>
-                <li>Analyse et vérification de clauses contractuelles.</li>
-                <li>Suggestions pour rédiger des contrats clairs et juridiquement solides.</li>
-                <li>Conseils personnalisés pour vos besoins contractuels.</li>
+                <li class="fade-in">Analyse et vérification de clauses contractuelles.</li>
+                <li class="fade-in">Suggestions pour rédiger des contrats clairs et juridiquement solides.</li>
+                <li class="fade-in">Conseils personnalisés pour vos besoins contractuels.</li>
             </ul>
         </section>
 
         <section id="chatbot">
-            <h2>Interagissez avec Dario-01</h2>
-            <p>Posez vos questions directement à Dario-01 via notre chatbot ci-dessous :</p>
-            <div id="chatbot-container">
-                <zapier-interfaces-chatbot-embed 
-                    is-popup="false" 
-                    chatbot-id="cm5bmlskt001s2rufkly2yzr4" 
-                    style="width: 100%; min-height: 600px;">
-                </zapier-interfaces-chatbot-embed>
+            <h2 class="slide-in">Interagissez avec Dario-01</h2>
+            <p class="fade-in">Posez vos questions directement à Dario-01 via notre chatbot ci-dessous :</p>
+            <div id="chatbot-container" class="fade-in">
+                <iframe 
+                    src="https://interfaces.zapier.com/embed/chatbot/cm5bmlskt001s2rufkly2yzr4" 
+                    height="600px" 
+                    width="400px" 
+                    allow="clipboard-write *" 
+                    style="border: none;">
+                </iframe>
             </div>
         </section>
 
         <section id="contact">
-            <h2>Contact</h2>
-            <form id="contact-form">
+            <h2 class="slide-in">Contact</h2>
+            <form id="contact-form" class="fade-in">
                 <label for="nom">Nom :</label>
                 <input type="text" id="nom" name="nom" required>
 
