@@ -1,23 +1,13 @@
 // script.js
 document.addEventListener("DOMContentLoaded", () => {
-    const toggleButton = document.getElementById("dark-mode-toggle");
+    const modal = document.getElementById("welcome-modal");
+    const closeModalButton = document.getElementById("close-modal");
 
-    // Check for saved preference in localStorage
-    const savedMode = localStorage.getItem("theme");
-    if (savedMode) {
-        document.body.className = savedMode;
-    }
+    // Show modal on page load
+    modal.style.display = "flex";
 
-    // Toggle dark and light mode
-    toggleButton.addEventListener("click", () => {
-        const currentMode = document.body.classList.contains("dark-mode")
-            ? "dark-mode"
-            : "light-mode";
-
-        const newMode = currentMode === "dark-mode" ? "light-mode" : "dark-mode";
-        document.body.className = newMode;
-
-        // Save the preference
-        localStorage.setItem("theme", newMode);
+    // Close modal when button is clicked
+    closeModalButton.addEventListener("click", () => {
+        modal.style.display = "none";
     });
 });
